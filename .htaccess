@@ -1,9 +1,0 @@
-# .htaccess
-Options -MultiViews
-RewriteEngine On
-RewriteBase /
-
-# Redirect all non-file requests to index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^.*$ index.php [QSA,L]
